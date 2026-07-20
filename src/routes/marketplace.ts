@@ -386,10 +386,34 @@ const PRODUCTS: Product[] = [
   }
 ];
 
-// Get marketplace catalog from MongoDB
+// Get marketplace catalog from MongoDB (paginated)
 router.get('/products', async (req: Request, res: Response) => {
   try {
-    const dbProducts = await ProductModel.find();
+    const { page = 1, limit = 12, search = '', category = 'all' } = req.query;
+
+    const pageNum = Math.max(1, Number(page));
+    const limitNum = Math.min(100, Math.max(1, Number(limit)));
+    const skipCount = (pageNum - 1) * limitNum;
+
+    // Build query filter
+    const query: any = {};
+    if (category && category !== 'all') {
+      query.category = category as string;
+    }
+    if (search) {
+      query.$or = [
+        { name: { $regex: search as string, $options: 'i' } },
+        { description: { $regex: search as string, $options: 'i' } }
+      ];
+    }
+
+    const [dbProducts, totalItems] = await Promise.all([
+      ProductModel.find(query).sort({ createdAt: -1 }).skip(skipCount).limit(limitNum),
+      ProductModel.countDocuments(query)
+    ]);
+
+    const totalPages = Math.ceil(totalItems / limitNum);
+
     const mappedProducts = dbProducts.map(p => ({
       id: p._id.toString(),
       name: p.name,
@@ -401,7 +425,15 @@ router.get('/products', async (req: Request, res: Response) => {
       rating: p.rating,
       reviewsCount: p.reviewsCount
     }));
-    res.status(200).json(mappedProducts);
+
+    res.status(200).json({
+      data: mappedProducts,
+      currentPage: pageNum,
+      totalPages,
+      totalItems,
+      hasNextPage: pageNum < totalPages,
+      hasPreviousPage: pageNum > 1
+    });
   } catch (err: any) {
     res.status(500).json({ error: { message: err.message || 'Failed to retrieve products from database.' } });
   }

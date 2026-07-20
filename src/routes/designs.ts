@@ -4,11 +4,11 @@ import mongoose from 'mongoose';
 
 const router = Router();
 
-// GET all designs
+// GET all designs (paginated)
 router.get('/', async (req: Request, res: Response) => {
   try {
-    const { search = '', style = 'all', page = 1, limit = 100 } = req.query;
-    
+    const { search = '', style = 'all', page = 1, limit = 9 } = req.query;
+
     const query: any = { published: true };
 
     if (search) {
@@ -22,24 +22,30 @@ router.get('/', async (req: Request, res: Response) => {
       query.style = { $regex: new RegExp(`^${style}$`, 'i') };
     }
 
-    const pageNum = Number(page);
-    const limitNum = Number(limit);
+    const pageNum = Math.max(1, Number(page));
+    const limitNum = Math.min(50, Math.max(1, Number(limit)));
     const skipCount = (pageNum - 1) * limitNum;
 
-    const designs = await Design.find(query)
-      .sort({ createdAt: -1 })
-      .skip(skipCount)
-      .limit(limitNum);
+    const [designs, totalItems] = await Promise.all([
+      Design.find(query).sort({ createdAt: -1 }).skip(skipCount).limit(limitNum),
+      Design.countDocuments(query)
+    ]);
 
-    const total = await Design.countDocuments(query);
+    const totalPages = Math.ceil(totalItems / limitNum);
 
     res.status(200).json({
       success: true,
       designs,
+      currentPage: pageNum,
+      totalPages,
+      totalItems,
+      hasNextPage: pageNum < totalPages,
+      hasPreviousPage: pageNum > 1,
+      // legacy compat
       pagination: {
-        total,
+        total: totalItems,
         page: pageNum,
-        pages: Math.ceil(total / limitNum)
+        pages: totalPages
       }
     });
   } catch (err: any) {
