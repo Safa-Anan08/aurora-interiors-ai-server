@@ -7,6 +7,50 @@ import Cart from '../models/Cart';
 
 const router = Router();
 
+router.get('/products', async (req: Request, res: Response) => {
+  try {
+    const page = parseInt((req.query.page as string) || '1', 10);
+    const limit = parseInt((req.query.limit as string) || '12', 10);
+    const search = (req.query.search as string) || '';
+    const category = (req.query.category as string) || '';
+
+    const filter: any = {};
+    if (search) {
+      filter.name = { $regex: search, $options: 'i' };
+    }
+    if (category && category !== 'all') {
+      filter.category = category;
+    }
+
+    const totalItems = await ProductModel.countDocuments(filter);
+    const totalPages = Math.ceil(totalItems / limit) || 1;
+    const skip = (page - 1) * limit;
+
+    const products = await ProductModel.find(filter)
+      .skip(skip)
+      .limit(limit)
+      .lean();
+
+    // Convert specs Map to plain object for each product
+    const data = products.map(p => ({
+      ...p,
+      specs: p.specs instanceof Map ? Object.fromEntries(p.specs) : p.specs,
+    }));
+
+    res.status(200).json({
+      data,
+      currentPage: page,
+      totalPages,
+      totalItems,
+      hasNextPage: page < totalPages,
+      hasPreviousPage: page > 1,
+    });
+  } catch (err: any) {
+    console.error('Failed to fetch marketplace products:', err);
+    res.status(500).json({ error: { message: err.message || 'Server error' } });
+  }
+});
+
 let stripeInstance: any = null;
 const getStripe = () => {
   if (!stripeInstance) {

@@ -39,6 +39,9 @@ router.get('/overview', async (req: Request, res: Response) => {
     const CartModel = require('../models/Cart').default || require('../models/Cart');
     const carts = await CartModel.find();
     const totalCartItems = carts.reduce((sum: number, c: any) => sum + c.items.reduce((acc: number, item: any) => acc + item.quantity, 0), 0);
+    // AI design sessions count (using Design collection as proxy)
+    const totalAIDesignSessions = await Design.countDocuments();
+    const totalSavedDesigns = totalAIDesignSessions;
     
     // Out of stock & low stock
     const outOfStockProducts = await Product.countDocuments({ stock: { $lte: 0 } });
@@ -128,6 +131,8 @@ router.get('/overview', async (req: Request, res: Response) => {
         completedOrders,
         totalWishlistItems,
         totalCartItems,
+        totalAIDesignSessions,
+        totalSavedDesigns,
         outOfStockProducts,
         lowStockProducts,
         mostWishlisted,

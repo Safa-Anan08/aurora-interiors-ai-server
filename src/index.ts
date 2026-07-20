@@ -54,7 +54,19 @@ app.use(helmet({
   crossOriginResourcePolicy: { policy: "cross-origin" }
 }));
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: (origin, callback) => {
+    if (process.env.NODE_ENV === 'production') {
+      const allowed = process.env.CLIENT_URL;
+      if (allowed && origin === allowed) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    } else {
+      // In development allow any origin
+      callback(null, true);
+    }
+  },
   credentials: true
 }));
 app.use(morgan('dev'));
