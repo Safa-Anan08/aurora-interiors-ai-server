@@ -86,51 +86,48 @@ const NAME_TO_HEX_ID: Record<string, string> = {
     "Ceramic Ribbed Vase": "de0000000000000000000002"
 };
 
-async function seedProducts() {
-    try {
-        await mongoose.connect(MONGODB_URI);
+// Seed script for Products - idempotent implementation
+export async function seedProducts(): Promise<void> {
+  try {
+    await mongoose.connect(MONGODB_URI);
+    console.log("🍀 MongoDB Connected (Products seed)");
 
-        console.log("🍀 MongoDB Connected");
+    let inserted = 0;
+    let skipped = 0;
 
-        let inserted = 0;
-        let skipped = 0;
+    for (const product of products) {
+      const exists = await Product.findOne({ name: product.name });
+      if (exists) {
+        skipped++;
+        console.log(`⏭️  Skipped (exists): ${product.name}`);
+        continue;
+      }
 
-        for (const product of products) {
-            // Name দিয়ে duplicate check
-            const exists = await Product.findOne({
-                name: product.name,
-            });
+      const hexId = NAME_TO_HEX_ID[product.name] || new mongoose.Types.ObjectId().toString();
 
-            if (exists) {
-                skipped++;
-                console.log(`⏭️  Skipped: ${product.name}`);
-                continue;
-            }
-
-            const hexId = NAME_TO_HEX_ID[product.name] || new mongoose.Types.ObjectId().toString();
-
-            await Product.create({
-                ...product,
-                _id: new mongoose.Types.ObjectId(hexId),
-                specs: new Map(Object.entries(product.specs || {}))
-            } as any);
-
-            inserted++;
-            console.log(`✅ Added: ${product.name}`);
-        }
-
-        console.log("\n==============================");
-        console.log("🌱 Product Seeding Finished");
-        console.log(`✅ Inserted : ${inserted}`);
-        console.log(`⏭️  Skipped  : ${skipped}`);
-        console.log("==============================\n");
-
-        process.exit(0);
-    } catch (error) {
-        console.error("❌ Seeding Failed");
-        console.error(error);
-        process.exit(1);
+      await Product.create({
+        ...product,
+        _id: new mongoose.Types.ObjectId(hexId),
+        specs: new Map(Object.entries(product.specs || {}))
+      } as any);
+      inserted++;
+      console.log(`✅ Added: ${product.name}`);
     }
+
+    console.log("\n==============================");
+    console.log("🌱 Product Seeding Finished");
+    console.log(`✅ Inserted : ${inserted}`);
+    console.log(`⏭️  Skipped  : ${skipped}`);
+    console.log("==============================\n");
+  } catch (error) {
+    console.error("❌ [seed]: Product seeding failed:", error);
+    process.exit(1);
+  } finally {
+    await mongoose.disconnect();
+  }
 }
 
-seedProducts();
+// Execute when run directly
+if (require.main === module) {
+  seedProducts();
+}

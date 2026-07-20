@@ -1,0 +1,1910 @@
+{
+  "register": {
+    "status": 400,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "63"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:05 GMT"
+      ],
+      "etag": [
+        "W/\"3f-Bv7BRACDIB1b5sVs5wCRg/Pv6gg\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "error": {
+        "message": "Name, email, and password are required."
+      }
+    }
+  },
+  "login": {
+    "status": 401,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "50"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:06 GMT"
+      ],
+      "etag": [
+        "W/\"32-Nnsx/KhIuQrLhyOKUWhACefIx7k\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "error": {
+        "message": "Invalid email credentials."
+      }
+    }
+  },
+  "productsList": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "1889"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:07 GMT"
+      ],
+      "etag": [
+        "W/\"761-JdzPW2/+FoIBIDElqF4qbN/x1KM\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "data": [
+        {
+          "id": "6a5e115790b076e047562012",
+          "name": "Abstract Canvas Wall Art",
+          "category": "decor",
+          "price": 189,
+          "description": "Large abstract canvas artwork designed for luxury modern interiors.",
+          "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Material": "Canvas",
+            "Frame": "Wood"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "de0000000000000000000002",
+          "name": "Ceramic Ribbed Vase",
+          "category": "decor",
+          "price": 49,
+          "description": "Minimal ribbed ceramic vase perfect for dried flowers and greenery.",
+          "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Material": "Ceramic",
+            "Height": "14 inches"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "6a5e115790b076e04756200f",
+          "name": "Sage Green Wall Paint",
+          "category": "paint",
+          "price": 62,
+          "description": "Soft sage green premium paint ideal for bedrooms and offices.",
+          "image": "https://images.unsplash.com/photo-1562979314-bee7453e911c?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Coverage": "400 sqft",
+            "Finish": "Eggshell"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "ba0000000000000000000002",
+          "name": "Warm Alabaster Paint",
+          "category": "paint",
+          "price": 58,
+          "description": "Premium washable interior paint with smooth matte finish.",
+          "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Coverage": "400 sqft",
+            "Finish": "Matte"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "6a5e115790b076e04756200c",
+          "name": "Oak Herringbone Flooring",
+          "category": "flooring",
+          "price": 24,
+          "description": "Engineered oak flooring featuring classic herringbone installation.",
+          "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Thickness": "14mm",
+            "Warranty": "20 Years"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        }
+      ],
+      "currentPage": 1,
+      "totalPages": 3,
+      "totalItems": 15,
+      "hasNextPage": true,
+      "hasPreviousPage": false
+    }
+  },
+  "productsSearch": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "871"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:07 GMT"
+      ],
+      "etag": [
+        "W/\"367-zgfshRNCreZScL/fz1IpjD1VWYE\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "data": [
+        {
+          "id": "110000000000000000000002",
+          "name": "Helios Floor Lamp",
+          "category": "lighting",
+          "price": 299,
+          "description": "Modern matte black floor lamp with warm LED ambient lighting.",
+          "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Power": "18W LED",
+            "Color": "3000K Warm White"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "6a5e115690b076e047561ffe",
+          "name": "Helios Arc Floor Lamp",
+          "category": "lighting",
+          "price": 349,
+          "description": "Elegant arc floor lamp featuring a brushed brass finish and warm ambient LED lighting for modern interiors.",
+          "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Bulb": "LED",
+            "Wattage": "18W",
+            "Voltage": "220V"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        }
+      ],
+      "currentPage": 1,
+      "totalPages": 1,
+      "totalItems": 2,
+      "hasNextPage": false,
+      "hasPreviousPage": false
+    }
+  },
+  "productsFilter": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "101"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:07 GMT"
+      ],
+      "etag": [
+        "W/\"65-FWsm/8QdDfUO97/RRL0H6JL1mWs\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "data": [],
+      "currentPage": 1,
+      "totalPages": 0,
+      "totalItems": 0,
+      "hasNextPage": false,
+      "hasPreviousPage": false
+    }
+  },
+  "productsPage2": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "2013"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:07 GMT"
+      ],
+      "etag": [
+        "W/\"7dd-tickPnbM25xxB3o4PCfoj5AyflI\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "data": [
+        {
+          "id": "f11000000000000000000002",
+          "name": "Terrazzo Stone Tiles",
+          "category": "flooring",
+          "price": 18,
+          "description": "Premium terrazzo porcelain floor tiles suitable for luxury interiors.",
+          "image": "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Thickness": "10mm",
+            "Finish": "Polished"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "110000000000000000000001",
+          "name": "Solace Pendant Light",
+          "category": "lighting",
+          "price": 399,
+          "description": "Travertine pendant light designed for dining and kitchen spaces.",
+          "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Power": "24W",
+            "Material": "Travertine"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "110000000000000000000002",
+          "name": "Helios Floor Lamp",
+          "category": "lighting",
+          "price": 299,
+          "description": "Modern matte black floor lamp with warm LED ambient lighting.",
+          "image": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Power": "18W LED",
+            "Color": "3000K Warm White"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "f10000000000000000000003",
+          "name": "Soren Leather Lounge Chair",
+          "category": "furniture",
+          "price": 1199,
+          "description": "Luxury leather lounge chair crafted with a solid ash wood frame for ultimate comfort.",
+          "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Material": "Italian Leather",
+            "Weight": "20kg",
+            "Warranty": "5 Years"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        },
+        {
+          "id": "f10000000000000000000002",
+          "name": "Nordic Oak Coffee Table",
+          "category": "furniture",
+          "price": 649,
+          "description": "Solid European oak coffee table featuring rounded edges and a minimalist Scandinavian profile.",
+          "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1200&q=80",
+          "specs": {
+            "Material": "Solid Oak",
+            "Weight": "24kg",
+            "Warranty": "5 Years"
+          },
+          "rating": 5,
+          "reviewsCount": 0
+        }
+      ],
+      "currentPage": 2,
+      "totalPages": 3,
+      "totalItems": 15,
+      "hasNextPage": true,
+      "hasPreviousPage": true
+    }
+  },
+  "designsList": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "5213"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:07 GMT"
+      ],
+      "etag": [
+        "W/\"145d-Gt9uq+AoGl8Flyul+H6RJ5YlfBA\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "success": true,
+      "designs": [
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ed8",
+          "title": "Elegant Hotel Lobby",
+          "style": "Contemporary",
+          "roomType": "Lobby",
+          "desc": "Five-star hotel lobby with luxury seating, marble finishes, decorative lighting, and statement artwork.",
+          "img": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Center reception desk.",
+            "Arrange waiting lounge.",
+            "Install chandelier."
+          ],
+          "specifications": [
+            "40 x 35 ft"
+          ],
+          "materials": [
+            "Marble",
+            "Brass",
+            "Glass"
+          ],
+          "furniture": [
+            "Reception Desk",
+            "Luxury Sofa",
+            "Coffee Table"
+          ],
+          "gallery": [],
+          "tags": [
+            "Hotel",
+            "Lobby",
+            "Luxury"
+          ],
+          "colors": [
+            {
+              "name": "Cream",
+              "hex": "#F5EFE7",
+              "_id": "6a5e2f2b335cdf2fe4a53ed9"
+            },
+            {
+              "name": "Gold",
+              "hex": "#D4AF37",
+              "_id": "6a5e2f2b335cdf2fe4a53eda"
+            },
+            {
+              "name": "Marble",
+              "hex": "#E6E6E6",
+              "_id": "6a5e2f2b335cdf2fe4a53edb"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.617Z",
+          "updatedAt": "2026-07-20T14:22:35.617Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ed4",
+          "title": "Luxury Home Theater",
+          "style": "Modern",
+          "roomType": "Home Theater",
+          "desc": "Cinema-quality entertainment room with acoustic panels, reclining seating, and immersive lighting.",
+          "img": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Install projector screen.",
+            "Arrange recliners.",
+            "Add LED strip lighting."
+          ],
+          "specifications": [
+            "20 x 18 ft"
+          ],
+          "materials": [
+            "Fabric",
+            "Leather",
+            "Wood"
+          ],
+          "furniture": [
+            "Recliner",
+            "Media Console",
+            "Projector"
+          ],
+          "gallery": [],
+          "tags": [
+            "Cinema",
+            "Luxury",
+            "Entertainment"
+          ],
+          "colors": [
+            {
+              "name": "Charcoal",
+              "hex": "#343434",
+              "_id": "6a5e2f2b335cdf2fe4a53ed5"
+            },
+            {
+              "name": "Black",
+              "hex": "#151515",
+              "_id": "6a5e2f2b335cdf2fe4a53ed6"
+            },
+            {
+              "name": "Brown",
+              "hex": "#6A4B36",
+              "_id": "6a5e2f2b335cdf2fe4a53ed7"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.527Z",
+          "updatedAt": "2026-07-20T14:22:35.527Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ed0",
+          "title": "Minimal Coffee Shop",
+          "style": "Minimalist",
+          "roomType": "Cafe",
+          "desc": "Modern coffee shop interior with clean furniture, polished concrete flooring, and warm ambient lighting.",
+          "img": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Arrange seating layout.",
+            "Install coffee counter.",
+            "Hang pendant lighting."
+          ],
+          "specifications": [
+            "30 x 22 ft",
+            "Concrete Flooring"
+          ],
+          "materials": [
+            "Concrete",
+            "Oak",
+            "Steel"
+          ],
+          "furniture": [
+            "Cafe Table",
+            "Dining Chair",
+            "Coffee Counter"
+          ],
+          "gallery": [],
+          "tags": [
+            "Cafe",
+            "Commercial",
+            "Minimal"
+          ],
+          "colors": [
+            {
+              "name": "Concrete",
+              "hex": "#B9B9B9",
+              "_id": "6a5e2f2b335cdf2fe4a53ed1"
+            },
+            {
+              "name": "Oak",
+              "hex": "#B37A4B",
+              "_id": "6a5e2f2b335cdf2fe4a53ed2"
+            },
+            {
+              "name": "Black",
+              "hex": "#222222",
+              "_id": "6a5e2f2b335cdf2fe4a53ed3"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.441Z",
+          "updatedAt": "2026-07-20T14:22:35.441Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ecc",
+          "title": "Contemporary Guest Bedroom",
+          "style": "Modern",
+          "roomType": "Bedroom",
+          "desc": "Comfortable guest bedroom with upholstered bed, built-in wardrobe, warm lighting, and calming earth-tone palette.",
+          "img": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+          "budget": "moderate",
+          "featured": false,
+          "published": true,
+          "layoutSteps": [
+            "Install queen-size bed.",
+            "Add bedside tables.",
+            "Mount artwork above bed."
+          ],
+          "specifications": [
+            "14 x 13 ft",
+            "Wood Flooring"
+          ],
+          "materials": [
+            "Wood",
+            "Fabric",
+            "Glass"
+          ],
+          "furniture": [
+            "Queen Bed",
+            "Wardrobe",
+            "Nightstand"
+          ],
+          "gallery": [],
+          "tags": [
+            "Bedroom",
+            "Guest Room",
+            "Modern"
+          ],
+          "colors": [
+            {
+              "name": "Sand",
+              "hex": "#E9DFC9",
+              "_id": "6a5e2f2b335cdf2fe4a53ecd"
+            },
+            {
+              "name": "Walnut",
+              "hex": "#77573D",
+              "_id": "6a5e2f2b335cdf2fe4a53ece"
+            },
+            {
+              "name": "White",
+              "hex": "#FFFFFF",
+              "_id": "6a5e2f2b335cdf2fe4a53ecf"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.358Z",
+          "updatedAt": "2026-07-20T14:22:35.358Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ec8",
+          "title": "Japandi Apartment Living Room",
+          "style": "Japandi",
+          "roomType": "Living Room",
+          "desc": "Clean Japandi-inspired apartment living room blending Japanese simplicity with Scandinavian warmth using natural materials and soft neutral colors.",
+          "img": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+          "budget": "moderate",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Center the low-profile sofa.",
+            "Position oak coffee table.",
+            "Place floor lamp beside seating.",
+            "Decorate with indoor plants."
+          ],
+          "specifications": [
+            "17 x 15 ft",
+            "Oak Flooring",
+            "Natural Lighting"
+          ],
+          "materials": [
+            "Oak",
+            "Linen",
+            "Stone"
+          ],
+          "furniture": [
+            "Japandi Sofa",
+            "Coffee Table",
+            "Floor Lamp",
+            "TV Console"
+          ],
+          "gallery": [],
+          "tags": [
+            "Japandi",
+            "Apartment",
+            "Living Room"
+          ],
+          "colors": [
+            {
+              "name": "Warm White",
+              "hex": "#F8F5F0",
+              "_id": "6a5e2f2b335cdf2fe4a53ec9"
+            },
+            {
+              "name": "Oak Brown",
+              "hex": "#C08A5B",
+              "_id": "6a5e2f2b335cdf2fe4a53eca"
+            },
+            {
+              "name": "Stone Grey",
+              "hex": "#D1CEC8",
+              "_id": "6a5e2f2b335cdf2fe4a53ecb"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.274Z",
+          "updatedAt": "2026-07-20T14:22:35.274Z",
+          "__v": 0
+        }
+      ],
+      "currentPage": 1,
+      "totalPages": 5,
+      "totalItems": 21,
+      "hasNextPage": true,
+      "hasPreviousPage": false,
+      "pagination": {
+        "total": 21,
+        "page": 1,
+        "pages": 5
+      }
+    }
+  },
+  "designsSearch": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "6123"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:07 GMT"
+      ],
+      "etag": [
+        "W/\"17eb-bf0s9vwoLtI/BlsxRdr8xLCuRUo\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "success": true,
+      "designs": [
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ec8",
+          "title": "Japandi Apartment Living Room",
+          "style": "Japandi",
+          "roomType": "Living Room",
+          "desc": "Clean Japandi-inspired apartment living room blending Japanese simplicity with Scandinavian warmth using natural materials and soft neutral colors.",
+          "img": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+          "budget": "moderate",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Center the low-profile sofa.",
+            "Position oak coffee table.",
+            "Place floor lamp beside seating.",
+            "Decorate with indoor plants."
+          ],
+          "specifications": [
+            "17 x 15 ft",
+            "Oak Flooring",
+            "Natural Lighting"
+          ],
+          "materials": [
+            "Oak",
+            "Linen",
+            "Stone"
+          ],
+          "furniture": [
+            "Japandi Sofa",
+            "Coffee Table",
+            "Floor Lamp",
+            "TV Console"
+          ],
+          "gallery": [],
+          "tags": [
+            "Japandi",
+            "Apartment",
+            "Living Room"
+          ],
+          "colors": [
+            {
+              "name": "Warm White",
+              "hex": "#F8F5F0",
+              "_id": "6a5e2f2b335cdf2fe4a53ec9"
+            },
+            {
+              "name": "Oak Brown",
+              "hex": "#C08A5B",
+              "_id": "6a5e2f2b335cdf2fe4a53eca"
+            },
+            {
+              "name": "Stone Grey",
+              "hex": "#D1CEC8",
+              "_id": "6a5e2f2b335cdf2fe4a53ecb"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.274Z",
+          "updatedAt": "2026-07-20T14:22:35.274Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2a335cdf2fe4a53ea0",
+          "title": "Scandinavian Family Living Room",
+          "style": "Scandinavian",
+          "roomType": "Living Room",
+          "desc": "Bright Scandinavian living room featuring soft neutral colors, oak furniture, cozy textiles, and abundant natural lighting.",
+          "img": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+          "budget": "moderate",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Place sofa facing the media wall.",
+            "Center the wool rug.",
+            "Install floor lamp beside sofa.",
+            "Add indoor plants near window."
+          ],
+          "specifications": [
+            "18 x 16 ft",
+            "Oak Flooring",
+            "Natural Daylight",
+            "Warm LED Lighting"
+          ],
+          "materials": [
+            "Oak Wood",
+            "Cotton",
+            "Wool",
+            "Glass"
+          ],
+          "furniture": [
+            "Bouclé Sofa",
+            "Oak Coffee Table",
+            "Floor Lamp",
+            "TV Console"
+          ],
+          "gallery": [],
+          "tags": [
+            "Scandinavian",
+            "Minimal",
+            "Cozy",
+            "Living Room"
+          ],
+          "colors": [
+            {
+              "name": "Soft White",
+              "hex": "#F8F7F2",
+              "_id": "6a5e2f2a335cdf2fe4a53ea1"
+            },
+            {
+              "name": "Oak",
+              "hex": "#C59A6B",
+              "_id": "6a5e2f2a335cdf2fe4a53ea2"
+            },
+            {
+              "name": "Stone",
+              "hex": "#CFCBC4",
+              "_id": "6a5e2f2a335cdf2fe4a53ea3"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:34.317Z",
+          "updatedAt": "2026-07-20T14:22:34.317Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2a335cdf2fe4a53e9b",
+          "title": "Modern Japandi Living Room",
+          "style": "Japandi",
+          "roomType": "Living Room",
+          "desc": "A luxurious Japandi living room combining Scandinavian simplicity with Japanese warmth. Natural oak furniture, boule seating, warm lighting, neutral colors, and handcrafted decor create a calm, elegant, and welcoming atmosphere.",
+          "img": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Place the Astrid Bouclé Sofa facing the entertainment wall.",
+            "Center the Nordic Wool Rug beneath the seating area.",
+            "Install the Solace Pendant Lamp above the coffee table.",
+            "Position the Travertine Wall Mirror opposite the window.",
+            "Decorate corners using the Concrete Planter Set."
+          ],
+          "specifications": [
+            "Room Size: 18ft x 15ft",
+            "Ceiling Height: 10ft",
+            "Engineered Oak Flooring",
+            "3000K Warm LED Lighting",
+            "South Facing Windows"
+          ],
+          "materials": [
+            "Oak Wood",
+            "Bouclé Fabric",
+            "Travertine Stone",
+            "Engineered Oak",
+            "Linen",
+            "Steel"
+          ],
+          "furniture": [
+            "Astrid Bouclé Accent Sofa",
+            "Aurora Oak TV Console",
+            "Luna Marble Side Table",
+            "Nordic Wool Rug",
+            "Travertine Wall Mirror",
+            "Concrete Planter Set"
+          ],
+          "gallery": [
+            "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+          ],
+          "tags": [
+            "Japandi",
+            "Luxury",
+            "Modern",
+            "Living Room",
+            "Minimal",
+            "Scandinavian"
+          ],
+          "colors": [
+            {
+              "name": "Warm Ivory",
+              "hex": "#F8F5F0",
+              "_id": "6a5e2f2a335cdf2fe4a53e9c"
+            },
+            {
+              "name": "Natural Oak",
+              "hex": "#C8A97E",
+              "_id": "6a5e2f2a335cdf2fe4a53e9d"
+            },
+            {
+              "name": "Sage Green",
+              "hex": "#A8B59F",
+              "_id": "6a5e2f2a335cdf2fe4a53e9e"
+            },
+            {
+              "name": "Charcoal",
+              "hex": "#4A4A4A",
+              "_id": "6a5e2f2a335cdf2fe4a53e9f"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:34.221Z",
+          "updatedAt": "2026-07-20T14:22:34.221Z",
+          "__v": 0
+        },
+        {
+          "_id": "d10000000000000000000002",
+          "title": "Scandinavian Cozy Living",
+          "style": "Scandinavian",
+          "roomType": "Living Room",
+          "desc": "Cozy textiles, light oak flooring, and bright ambient lighting built for relaxation. It highlights natural textures and a calm neutral background.",
+          "img": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Center the cream bouclé sofa as the room focal node.",
+            "Situate the Nordic Oak Coffee Table in front of the sofa.",
+            "Hang travertine stone pendant light fixtures above key reading corners.",
+            "Employ low-VOC Alabaster white paint on all walls to capture ambient light."
+          ],
+          "specifications": [
+            "Dimensions: 16' x 14'",
+            "Sofa: Astrid Bouclé Sofa",
+            "Coffee Table: Nordic Oak"
+          ],
+          "materials": [
+            "Cozy Bouclé",
+            "Nordic Light Oak",
+            "Travertine Stone",
+            "Natural Wool"
+          ],
+          "furniture": [
+            "Astrid Bouclé Sofa",
+            "Nordic Oak Coffee Table"
+          ],
+          "gallery": [
+            "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=600&q=80",
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80"
+          ],
+          "tags": [
+            "Cozy",
+            "Lounge",
+            "Scandinavian",
+            "Bright"
+          ],
+          "colors": [
+            {
+              "name": "Soft Alabaster",
+              "hex": "#f5f5f4",
+              "_id": "6a5e1e293948d4d9a60bd465"
+            },
+            {
+              "name": "Cozy Cream",
+              "hex": "#fef08a",
+              "_id": "6a5e1e293948d4d9a60bd466"
+            },
+            {
+              "name": "Slate Gray",
+              "hex": "#6b7280",
+              "_id": "6a5e1e293948d4d9a60bd467"
+            }
+          ],
+          "recommendedProductIds": [
+            "f10000000000000000000001",
+            "f10000000000000000000002",
+            "110000000000000000000001",
+            "ba0000000000000000000002",
+            "de0000000000000000000001"
+          ],
+          "__v": 0,
+          "createdAt": "2026-07-20T13:10:01.301Z",
+          "updatedAt": "2026-07-20T13:10:01.301Z"
+        }
+      ],
+      "currentPage": 1,
+      "totalPages": 1,
+      "totalItems": 4,
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "pagination": {
+        "total": 4,
+        "page": 1,
+        "pages": 1
+      }
+    }
+  },
+  "designsFilter": {
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "6087"
+      ],
+      "content-security-policy": [
+        "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+      ],
+      "content-type": [
+        "application/json; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:08 GMT"
+      ],
+      "etag": [
+        "W/\"17c7-F/adYI7b4VgVazgH1+n2pM6ZU/E\""
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": {
+      "success": true,
+      "designs": [
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ed4",
+          "title": "Luxury Home Theater",
+          "style": "Modern",
+          "roomType": "Home Theater",
+          "desc": "Cinema-quality entertainment room with acoustic panels, reclining seating, and immersive lighting.",
+          "img": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Install projector screen.",
+            "Arrange recliners.",
+            "Add LED strip lighting."
+          ],
+          "specifications": [
+            "20 x 18 ft"
+          ],
+          "materials": [
+            "Fabric",
+            "Leather",
+            "Wood"
+          ],
+          "furniture": [
+            "Recliner",
+            "Media Console",
+            "Projector"
+          ],
+          "gallery": [],
+          "tags": [
+            "Cinema",
+            "Luxury",
+            "Entertainment"
+          ],
+          "colors": [
+            {
+              "name": "Charcoal",
+              "hex": "#343434",
+              "_id": "6a5e2f2b335cdf2fe4a53ed5"
+            },
+            {
+              "name": "Black",
+              "hex": "#151515",
+              "_id": "6a5e2f2b335cdf2fe4a53ed6"
+            },
+            {
+              "name": "Brown",
+              "hex": "#6A4B36",
+              "_id": "6a5e2f2b335cdf2fe4a53ed7"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.527Z",
+          "updatedAt": "2026-07-20T14:22:35.527Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ecc",
+          "title": "Contemporary Guest Bedroom",
+          "style": "Modern",
+          "roomType": "Bedroom",
+          "desc": "Comfortable guest bedroom with upholstered bed, built-in wardrobe, warm lighting, and calming earth-tone palette.",
+          "img": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+          "budget": "moderate",
+          "featured": false,
+          "published": true,
+          "layoutSteps": [
+            "Install queen-size bed.",
+            "Add bedside tables.",
+            "Mount artwork above bed."
+          ],
+          "specifications": [
+            "14 x 13 ft",
+            "Wood Flooring"
+          ],
+          "materials": [
+            "Wood",
+            "Fabric",
+            "Glass"
+          ],
+          "furniture": [
+            "Queen Bed",
+            "Wardrobe",
+            "Nightstand"
+          ],
+          "gallery": [],
+          "tags": [
+            "Bedroom",
+            "Guest Room",
+            "Modern"
+          ],
+          "colors": [
+            {
+              "name": "Sand",
+              "hex": "#E9DFC9",
+              "_id": "6a5e2f2b335cdf2fe4a53ecd"
+            },
+            {
+              "name": "Walnut",
+              "hex": "#77573D",
+              "_id": "6a5e2f2b335cdf2fe4a53ece"
+            },
+            {
+              "name": "White",
+              "hex": "#FFFFFF",
+              "_id": "6a5e2f2b335cdf2fe4a53ecf"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.358Z",
+          "updatedAt": "2026-07-20T14:22:35.358Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2b335cdf2fe4a53ec4",
+          "title": "Luxury Rooftop Lounge",
+          "style": "Modern",
+          "roomType": "Outdoor",
+          "desc": "Sophisticated rooftop lounge with modular seating, fire pit, ambient lighting, and panoramic city views.",
+          "img": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Arrange outdoor seating.",
+            "Install fire pit.",
+            "Add garden lighting."
+          ],
+          "specifications": [
+            "24 x 18 ft"
+          ],
+          "materials": [
+            "Concrete",
+            "Teak",
+            "Steel"
+          ],
+          "furniture": [
+            "Outdoor Sofa",
+            "Coffee Table",
+            "Fire Pit"
+          ],
+          "gallery": [],
+          "tags": [
+            "Outdoor",
+            "Luxury",
+            "Lounge"
+          ],
+          "colors": [
+            {
+              "name": "Concrete",
+              "hex": "#9A9A9A",
+              "_id": "6a5e2f2b335cdf2fe4a53ec5"
+            },
+            {
+              "name": "Teak",
+              "hex": "#A36D3C",
+              "_id": "6a5e2f2b335cdf2fe4a53ec6"
+            },
+            {
+              "name": "Charcoal",
+              "hex": "#444444",
+              "_id": "6a5e2f2b335cdf2fe4a53ec7"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:35.178Z",
+          "updatedAt": "2026-07-20T14:22:35.178Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2a335cdf2fe4a53ebc",
+          "title": "Luxury Walk-in Closet",
+          "style": "Modern",
+          "roomType": "Closet",
+          "desc": "Premium walk-in wardrobe with glass cabinets, LED shelving, and luxury dressing island.",
+          "img": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Install wardrobes.",
+            "Place center island.",
+            "Add LED strips."
+          ],
+          "specifications": [
+            "14 x 12 ft",
+            "Wood Flooring"
+          ],
+          "materials": [
+            "Glass",
+            "Oak",
+            "Steel"
+          ],
+          "furniture": [
+            "Wardrobe",
+            "Island",
+            "Mirror"
+          ],
+          "gallery": [],
+          "tags": [
+            "Closet",
+            "Luxury"
+          ],
+          "colors": [
+            {
+              "name": "Champagne",
+              "hex": "#E6D3B3",
+              "_id": "6a5e2f2a335cdf2fe4a53ebd"
+            },
+            {
+              "name": "Walnut",
+              "hex": "#755437",
+              "_id": "6a5e2f2a335cdf2fe4a53ebe"
+            },
+            {
+              "name": "Black",
+              "hex": "#2B2B2B",
+              "_id": "6a5e2f2a335cdf2fe4a53ebf"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:34.996Z",
+          "updatedAt": "2026-07-20T14:22:34.996Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2a335cdf2fe4a53eb4",
+          "title": "Modern Dining Room",
+          "style": "Modern",
+          "roomType": "Dining Room",
+          "desc": "Elegant dining room featuring a marble dining table, upholstered chairs, statement pendant lighting, and warm neutral finishes.",
+          "img": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Center the dining table.",
+            "Install pendant light above table.",
+            "Add sideboard against wall.",
+            "Decorate with artwork."
+          ],
+          "specifications": [
+            "16 x 14 ft",
+            "Marble Flooring",
+            "Warm LED"
+          ],
+          "materials": [
+            "Marble",
+            "Oak",
+            "Glass"
+          ],
+          "furniture": [
+            "Dining Table",
+            "Dining Chairs",
+            "Sideboard"
+          ],
+          "gallery": [],
+          "tags": [
+            "Dining",
+            "Modern",
+            "Luxury"
+          ],
+          "colors": [
+            {
+              "name": "Ivory",
+              "hex": "#F5F2ED",
+              "_id": "6a5e2f2a335cdf2fe4a53eb5"
+            },
+            {
+              "name": "Walnut",
+              "hex": "#8A6848",
+              "_id": "6a5e2f2a335cdf2fe4a53eb6"
+            },
+            {
+              "name": "Gold",
+              "hex": "#D8B15A",
+              "_id": "6a5e2f2a335cdf2fe4a53eb7"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:34.805Z",
+          "updatedAt": "2026-07-20T14:22:34.805Z",
+          "__v": 0
+        },
+        {
+          "_id": "6a5e2f2a335cdf2fe4a53ea4",
+          "title": "Luxury Master Bedroom",
+          "style": "Modern",
+          "roomType": "Bedroom",
+          "desc": "Elegant master bedroom with upholstered bed, marble accents, warm lighting, and premium finishes.",
+          "img": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+          "budget": "premium",
+          "featured": true,
+          "published": true,
+          "layoutSteps": [
+            "Center the king bed.",
+            "Install pendant lights.",
+            "Place accent chair.",
+            "Add large area rug"
+          ],
+          "specifications": [
+            "20 x 18 ft",
+            "Wood Flooring",
+            "Smart Lighting"
+          ],
+          "materials": [
+            "Velvet",
+            "Marble",
+            "Oak",
+            "Glass"
+          ],
+          "furniture": [
+            "King Bed",
+            "Nightstand",
+            "Accent Chair",
+            "Wardrobe"
+          ],
+          "gallery": [],
+          "tags": [
+            "Luxury",
+            "Bedroom",
+            "Modern"
+          ],
+          "colors": [
+            {
+              "name": "Ivory",
+              "hex": "#F4F0EA",
+              "_id": "6a5e2f2a335cdf2fe4a53ea5"
+            },
+            {
+              "name": "Walnut",
+              "hex": "#70543E",
+              "_id": "6a5e2f2a335cdf2fe4a53ea6"
+            },
+            {
+              "name": "Gold",
+              "hex": "#D4AF37",
+              "_id": "6a5e2f2a335cdf2fe4a53ea7"
+            }
+          ],
+          "recommendedProductIds": [],
+          "createdAt": "2026-07-20T14:22:34.418Z",
+          "updatedAt": "2026-07-20T14:22:34.418Z",
+          "__v": 0
+        }
+      ],
+      "currentPage": 1,
+      "totalPages": 1,
+      "totalItems": 6,
+      "hasNextPage": false,
+      "hasPreviousPage": false,
+      "pagination": {
+        "total": 6,
+        "page": 1,
+        "pages": 1
+      }
+    }
+  },
+  "dashboard": {
+    "status": 404,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "152"
+      ],
+      "content-security-policy": [
+        "default-src 'none'"
+      ],
+      "content-type": [
+        "text/html; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:08 GMT"
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /api/dashboard</pre>\n</body>\n</html>\n"
+  },
+  "checkout": {
+    "status": 404,
+    "headers": {
+      "access-control-allow-credentials": [
+        "true"
+      ],
+      "access-control-allow-origin": [
+        "http://localhost:3000"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-length": [
+        "167"
+      ],
+      "content-security-policy": [
+        "default-src 'none'"
+      ],
+      "content-type": [
+        "text/html; charset=utf-8"
+      ],
+      "cross-origin-opener-policy": [
+        "same-origin"
+      ],
+      "cross-origin-resource-policy": [
+        "cross-origin"
+      ],
+      "date": [
+        "Mon, 20 Jul 2026 14:29:08 GMT"
+      ],
+      "keep-alive": [
+        "timeout=5"
+      ],
+      "origin-agent-cluster": [
+        "?1"
+      ],
+      "referrer-policy": [
+        "no-referrer"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains"
+      ],
+      "vary": [
+        "Origin"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-dns-prefetch-control": [
+        "off"
+      ],
+      "x-download-options": [
+        "noopen"
+      ],
+      "x-frame-options": [
+        "SAMEORIGIN"
+      ],
+      "x-permitted-cross-domain-policies": [
+        "none"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "body": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot POST /api/checkout/create-session</pre>\n</body>\n</html>\n"
+  }
+}
