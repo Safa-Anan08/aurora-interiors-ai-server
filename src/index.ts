@@ -62,6 +62,10 @@ app.get('/health', (req: Request, res: Response) => {
   });
 });
 
+app.get('/', (req: Request, res: Response) => {
+  res.status(200).json({ message: "Aurora Interiors AI Server is running." });
+});
+
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/generate', generateRoutes);
