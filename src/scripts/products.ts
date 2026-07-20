@@ -704,6 +704,685 @@
 
 export const products = [
     {
+        name: "Nordic Oak Dining Table",
+        category: "furniture",
+        subCategory: "Dining Table",
+        brand: "Scandi Home",
+        discount: 12,
+        description:
+            "Solid oak dining table with minimalist Scandinavian craftsmanship for modern dining spaces.",
+        shortDescription:
+            "Premium solid oak dining table.",
+        price: 799,
+        stock: 18,
+        roomType: "Dining Room",
+        material: "Solid Oak Wood",
+        color: "Natural Oak",
+        width: 72,
+        height: 30,
+        length: 38,
+        sqFtCoverage: 45,
+        style: "Scandinavian",
+        finish: "Natural Matte",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Material: "Solid Oak",
+            Seats: "6",
+            Finish: "Natural Matte"
+        }
+    },
+    {
+        name: "Velvet Accent Lounge Chair",
+        category: "furniture",
+        subCategory: "Chair",
+        brand: "Maison Luxe",
+        discount: 15,
+        description:
+            "Luxury velvet accent chair with ergonomic seating and gold metal legs.",
+        shortDescription:
+            "Elegant velvet lounge chair.",
+        price: 429,
+        stock: 26,
+        roomType: "Living Room",
+        material: "Velvet",
+        color: "Emerald Green",
+        width: 28,
+        height: 34,
+        length: 29,
+        sqFtCoverage: 12,
+        style: "Modern Luxury",
+        finish: "Velvet",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: false,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Frame: "Steel",
+            Fabric: "Velvet",
+            Weight: "18kg"
+        }
+    },
+    {
+        name: "Crystal Ring Chandelier",
+        category: "lighting",
+        subCategory: "Chandelier",
+        brand: "Aurora Lights",
+        discount: 20,
+        description:
+            "Modern crystal LED chandelier designed to elevate luxury interiors.",
+        shortDescription:
+            "Crystal LED chandelier.",
+        price: 899,
+        stock: 10,
+        roomType: "Dining Room",
+        material: "Crystal & Aluminum",
+        color: "Silver",
+        width: 36,
+        height: 18,
+        length: 36,
+        sqFtCoverage: 25,
+        style: "Luxury",
+        finish: "Polished Chrome",
+        image:
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Bulb: "Integrated LED",
+            Wattage: "48W",
+            Voltage: "220V"
+        }
+    },
+    {
+        name: "Warm Walnut Herringbone Flooring",
+        category: "flooring",
+        subCategory: "Engineered Wood",
+        brand: "WoodCraft",
+        discount: 8,
+        description:
+            "Premium herringbone engineered wood flooring with natural walnut finish.",
+        shortDescription:
+            "Luxury walnut flooring.",
+        price: 12,
+        stock: 600,
+        roomType: "Living Room",
+        material: "Engineered Wood",
+        color: "Walnut",
+        width: 8,
+        height: 1,
+        length: 48,
+        sqFtCoverage: 24,
+        style: "Classic",
+        finish: "Matte",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Thickness: "12mm",
+            Finish: "Matte",
+            Warranty: "20 Years"
+        }
+    },
+    {
+        name: "Minimalist Wall Mirror",
+        category: "decor",
+        subCategory: "Mirror",
+        brand: "Reflect Studio",
+        discount: 5,
+        description:
+            "Large premium wall mirror with slim brushed aluminum frame.",
+        shortDescription:
+            "Elegant decorative wall mirror.",
+        price: 259,
+        stock: 35,
+        roomType: "Bedroom",
+        material: "Glass",
+        color: "Black",
+        width: 32,
+        height: 72,
+        length: 2,
+        sqFtCoverage: 0,
+        style: "Minimal",
+        finish: "Matte Black",
+        image:
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: false,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Frame: "Aluminum",
+            Mount: "Wall",
+            Shape: "Rectangle"
+        }
+    }, {
+        name: "Ivory Silk Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 8,
+        description:
+            "Luxury washable silk finish paint that creates a bright and elegant atmosphere.",
+        shortDescription:
+            "Premium ivory silk wall paint.",
+        price: 55,
+        stock: 95,
+        roomType: "Living Room",
+        material: "Acrylic Paint",
+        color: "Ivory",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 420,
+        style: "Luxury",
+        finish: "Silk",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "420 sqft",
+            Finish: "Silk",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Midnight Blue Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 10,
+        description:
+            "Deep navy blue premium paint for dramatic accent walls.",
+        shortDescription:
+            "Elegant midnight blue paint.",
+        price: 58,
+        stock: 90,
+        roomType: "Bedroom",
+        material: "Acrylic Paint",
+        color: "Midnight Blue",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 400,
+        style: "Modern",
+        finish: "Matte",
+        image:
+            "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: false,
+        rating: 4.9,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "400 sqft",
+            Finish: "Matte",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Warm Beige Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 5,
+        description:
+            "Soft warm beige paint ideal for creating cozy living spaces.",
+        shortDescription:
+            "Warm beige matte paint.",
+        price: 46,
+        stock: 130,
+        roomType: "Living Room",
+        material: "Acrylic Paint",
+        color: "Warm Beige",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 410,
+        style: "Minimal",
+        finish: "Matte",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: true,
+        rating: 4.8,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "410 sqft",
+            Finish: "Matte",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Charcoal Grey Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 12,
+        description:
+            "Contemporary charcoal grey paint perfect for luxury interiors.",
+        shortDescription:
+            "Premium charcoal grey wall paint.",
+        price: 60,
+        stock: 70,
+        roomType: "Office",
+        material: "Acrylic Paint",
+        color: "Charcoal Grey",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 390,
+        style: "Industrial",
+        finish: "Eggshell",
+        image:
+            "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "390 sqft",
+            Finish: "Eggshell",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Dusty Rose Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 6,
+        description:
+            "Elegant dusty rose paint inspired by luxury interior palettes.",
+        shortDescription:
+            "Soft dusty rose premium paint.",
+        price: 52,
+        stock: 100,
+        roomType: "Bedroom",
+        material: "Acrylic Paint",
+        color: "Dusty Rose",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 405,
+        style: "Luxury",
+        finish: "Velvet Matte",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "405 sqft",
+            Finish: "Velvet Matte",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Ocean Teal Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 8,
+        description:
+            "Refreshing teal wall paint bringing coastal elegance indoors.",
+        shortDescription:
+            "Ocean teal interior paint.",
+        price: 54,
+        stock: 85,
+        roomType: "Bathroom",
+        material: "Acrylic Paint",
+        color: "Ocean Teal",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 395,
+        style: "Coastal",
+        finish: "Satin",
+        image:
+            "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: true,
+        rating: 4.9,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "395 sqft",
+            Finish: "Satin",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Terracotta Clay Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 5,
+        description:
+            "Earthy terracotta paint ideal for Mediterranean-inspired homes.",
+        shortDescription:
+            "Natural terracotta wall paint.",
+        price: 51,
+        stock: 75,
+        roomType: "Dining Room",
+        material: "Acrylic Paint",
+        color: "Terracotta",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 400,
+        style: "Rustic",
+        finish: "Matte",
+        image:
+            "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: false,
+        rating: 4.8,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "400 sqft",
+            Finish: "Matte",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Forest Emerald Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 9,
+        description:
+            "Rich emerald green paint for sophisticated statement walls.",
+        shortDescription:
+            "Premium emerald green paint.",
+        price: 59,
+        stock: 80,
+        roomType: "Living Room",
+        material: "Acrylic Paint",
+        color: "Emerald Green",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 390,
+        style: "Luxury",
+        finish: "Satin",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "390 sqft",
+            Finish: "Satin",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Soft Lavender Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 4,
+        description:
+            "Relaxing lavender wall paint designed for peaceful interiors.",
+        shortDescription:
+            "Soft lavender premium paint.",
+        price: 49,
+        stock: 120,
+        roomType: "Bedroom",
+        material: "Acrylic Paint",
+        color: "Lavender",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 420,
+        style: "Scandinavian",
+        finish: "Matte",
+        image:
+            "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: false,
+        rating: 4.9,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "420 sqft",
+            Finish: "Matte",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Classic Pure White Interior Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 7,
+        description:
+            "Ultra-premium pure white paint offering maximum brightness and durability.",
+        shortDescription:
+            "Classic pure white wall paint.",
+        price: 45,
+        stock: 150,
+        roomType: "Any Room",
+        material: "Acrylic Paint",
+        color: "Pure White",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 430,
+        style: "Contemporary",
+        finish: "Matte",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "430 sqft",
+            Finish: "Matte",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Ivory Linen Curtains",
+        category: "decor",
+        subCategory: "Curtains",
+        brand: "Soft Living",
+        discount: 10,
+        description:
+            "Premium blackout linen curtains for elegant contemporary interiors.",
+        shortDescription:
+            "Luxury ivory blackout curtains.",
+        price: 139,
+        stock: 75,
+        roomType: "Bedroom",
+        material: "Linen",
+        color: "Ivory",
+        width: 52,
+        height: 96,
+        length: 1,
+        sqFtCoverage: 0,
+        style: "Contemporary",
+        finish: "Soft Linen",
+        image:
+            "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Fabric: "Linen",
+            Blackout: "90%",
+            Washable: "Yes"
+        }
+    },
+    {
+        name: "Terracotta Accent Paint",
+        category: "paint",
+        subCategory: "Wall Paint",
+        brand: "ColorNest",
+        discount: 5,
+        description:
+            "Washable premium interior paint with rich terracotta finish.",
+        shortDescription:
+            "Warm terracotta wall paint.",
+        price: 52,
+        stock: 90,
+        roomType: "Living Room",
+        material: "Acrylic Paint",
+        color: "Terracotta",
+        width: 0,
+        height: 0,
+        length: 0,
+        sqFtCoverage: 400,
+        style: "",
+        finish: "Matte",
+        image:
+            "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Coverage: "400 sqft",
+            Finish: "Matte",
+            DryTime: "2 Hours"
+        }
+    },
+    {
+        name: "Modern Coffee Table",
+        category: "furniture",
+        subCategory: "Coffee Table",
+        brand: "Urban Nest",
+        discount: 18,
+        description:
+            "Premium marble top coffee table with black powder-coated steel frame.",
+        shortDescription:
+            "Luxury marble coffee table.",
+        price: 329,
+        stock: 24,
+        roomType: "Living Room",
+        material: "Marble & Steel",
+        color: "White",
+        width: 42,
+        height: 18,
+        length: 24,
+        sqFtCoverage: 10,
+        style: "Modern",
+        finish: "Polished",
+        image:
+            "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: false,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Top: "Marble",
+            Frame: "Steel",
+            Weight: "24kg"
+        }
+    },
+    {
+        name: "Smart LED Ceiling Panel",
+        category: "lighting",
+        subCategory: "Ceiling Light",
+        brand: "BrightHome",
+        discount: 12,
+        description:
+            "Wi-Fi enabled smart LED ceiling light with adjustable brightness and color temperature.",
+        shortDescription:
+            "Smart ceiling LED panel.",
+        price: 179,
+        stock: 50,
+        roomType: "Office",
+        material: "Aluminum",
+        color: "White",
+        width: 24,
+        height: 2,
+        length: 24,
+        sqFtCoverage: 20,
+        style: "Modern",
+        finish: "Matte White",
+        image:
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: false,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Wattage: "36W",
+            Smart: "WiFi",
+            ColorTemp: "2700K-6500K"
+        }
+    },
+    {
+        name: "Luxury Wool Area Rug",
+        category: "decor",
+        subCategory: "Rug",
+        brand: "Nord Rugs",
+        discount: 14,
+        description:
+            "Handwoven premium wool area rug with soft texture and timeless elegance.",
+        shortDescription:
+            "Handwoven luxury wool rug.",
+        price: 459,
+        stock: 20,
+        roomType: "Living Room",
+        material: "Wool",
+        color: "Beige",
+        width: 96,
+        height: 1,
+        length: 120,
+        sqFtCoverage: 80,
+        style: "Contemporary",
+        finish: "Handwoven",
+        image:
+            "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80",
+        gallery: [],
+        featured: true,
+        trending: true,
+        rating: 5,
+        reviewsCount: 0,
+        specs: {
+            Material: "100% Wool",
+            Thickness: "12mm",
+            Handmade: "Yes"
+        }
+    },
+    {
         name: "Helios Arc Floor Lamp",
         category: "lighting",
         subCategory: "Floor Lamp",
