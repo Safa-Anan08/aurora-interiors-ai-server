@@ -18,8 +18,7 @@ import projectRoutes from './routes/projects';
 const requiredEnvVars = ['STRIPE_SECRET_KEY', 'CLIENT_URL'];
 requiredEnvVars.forEach(varName => {
   if (!process.env[varName]) {
-    console.error(`❌[config]: Missing required environment variable ${varName}`);
-    process.exit(1);
+    console.warn(`⚠️[config]: Missing environment variable ${varName}. Production features requiring this key will be disabled or fall back to default behavior.`);
   }
 });
 import marketplaceRoutes from './routes/marketplace';
@@ -55,15 +54,18 @@ app.use(helmet({
 }));
 app.use(cors({
   origin: (origin, callback) => {
+    if (!origin) return callback(null, true);
     if (process.env.NODE_ENV === 'production') {
-      const allowed = process.env.CLIENT_URL;
-      if (allowed && origin === allowed) {
+      const allowed = process.env.CLIENT_URL ? process.env.CLIENT_URL.replace(/\/$/, '') : '';
+      const normalizedOrigin = origin.replace(/\/$/, '');
+      if (allowed && (normalizedOrigin === allowed || normalizedOrigin.endsWith('.vercel.app'))) {
+        callback(null, true);
+      } else if (!allowed) {
         callback(null, true);
       } else {
-        callback(new Error('Not allowed by CORS'));
+        callback(new Error(`Not allowed by CORS: ${origin}`));
       }
     } else {
-      // In development allow any origin
       callback(null, true);
     }
   },

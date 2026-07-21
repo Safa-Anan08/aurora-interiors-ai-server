@@ -133,7 +133,7 @@ export async function askGemini(
         responseMimeType: 'application/json',
         temperature: 0.7
       }
-    });
+    }, { timeout: 30000 });
 
     const candidateText = response.data?.candidates?.[0]?.content?.parts?.[0]?.text;
     if (!candidateText) {

@@ -7,50 +7,6 @@ import Cart from '../models/Cart';
 
 const router = Router();
 
-router.get('/products', async (req: Request, res: Response) => {
-  try {
-    const page = parseInt((req.query.page as string) || '1', 10);
-    const limit = parseInt((req.query.limit as string) || '12', 10);
-    const search = (req.query.search as string) || '';
-    const category = (req.query.category as string) || '';
-
-    const filter: any = {};
-    if (search) {
-      filter.name = { $regex: search, $options: 'i' };
-    }
-    if (category && category !== 'all') {
-      filter.category = category;
-    }
-
-    const totalItems = await ProductModel.countDocuments(filter);
-    const totalPages = Math.ceil(totalItems / limit) || 1;
-    const skip = (page - 1) * limit;
-
-    const products = await ProductModel.find(filter)
-      .skip(skip)
-      .limit(limit)
-      .lean();
-
-    // Convert specs Map to plain object for each product
-    const data = products.map(p => ({
-      ...p,
-      specs: p.specs instanceof Map ? Object.fromEntries(p.specs) : p.specs,
-    }));
-
-    res.status(200).json({
-      data,
-      currentPage: page,
-      totalPages,
-      totalItems,
-      hasNextPage: page < totalPages,
-      hasPreviousPage: page > 1,
-    });
-  } catch (err: any) {
-    console.error('Failed to fetch marketplace products:', err);
-    res.status(500).json({ error: { message: err.message || 'Server error' } });
-  }
-});
-
 let stripeInstance: any = null;
 const getStripe = () => {
   if (!stripeInstance) {
@@ -594,6 +550,9 @@ router.post('/checkout', requireAuth, async (req: AuthRequest, res: Response) =>
     await order.save();
 
     // 3. Create Stripe Checkout Session
+    const clientOrigin = process.env.CLIENT_URL || req.headers.origin || 'http://localhost:3000';
+    const baseUrl = clientOrigin.replace(/\/$/, '');
+
     const session = await getStripe().checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: lineItems,
@@ -601,10 +560,10 @@ router.post('/checkout', requireAuth, async (req: AuthRequest, res: Response) =>
       client_reference_id: userId,
       metadata: {
         orderId: order._id.toString(),
-        userId: userId
+        userId: userId || ''
       },
-      success_url: `${req.headers.origin || 'http://localhost:3000'}/checkout-success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${req.headers.origin || 'http://localhost:3000'}/checkout-cancel`
+      success_url: `${baseUrl}/checkout-success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${baseUrl}/checkout-cancel`
     });
 
     res.status(200).json({
@@ -617,6 +576,73 @@ router.post('/checkout', requireAuth, async (req: AuthRequest, res: Response) =>
     console.error('Checkout error:', error);
     res.status(500).json({ error: { message: error.message || 'Payment system error.' } });
   }
+});
+
+// Stripe Webhook Endpoint for Async Order Confirmation & Idempotency
+router.post('/webhook', async (req: Request, res: Response) => {
+  const sig = req.headers['stripe-signature'];
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+
+  let event: any;
+
+  try {
+    if (webhookSecret && sig) {
+      const rawBody = typeof req.body === 'string' || Buffer.isBuffer(req.body) ? req.body : JSON.stringify(req.body);
+      event = getStripe().webhooks.constructEvent(rawBody, sig, webhookSecret);
+    } else {
+      event = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+    }
+  } catch (err: any) {
+    console.error(`⚠️ Webhook signature verification failed: ${err.message}`);
+    return res.status(400).send(`Webhook Error: ${err.message}`);
+  }
+
+  if (event.type === 'checkout.session.completed') {
+    const session = event.data?.object || {};
+    const orderId = session.metadata?.orderId;
+    const userId = session.metadata?.userId || session.client_reference_id;
+
+    if (orderId && session.payment_status === 'paid') {
+      try {
+        let payment = await Payment.findOne({ stripeSessionId: session.id });
+        let order = await Order.findById(orderId).populate('items.product');
+
+        if (!payment && order) {
+          order.status = 'processing';
+          order.paymentIntentId = typeof session.payment_intent === 'string' ? session.payment_intent : session.id;
+          await order.save();
+
+          const purchasedProducts = order.items.map((item: any) => ({
+            product: item.product?._id || item.product,
+            name: item.product?.name || 'Product',
+            price: item.price,
+            quantity: item.quantity
+          }));
+
+          payment = new Payment({
+            user: userId || order.user,
+            order: order._id,
+            purchasedProducts,
+            subtotal: order.total,
+            total: order.total,
+            stripeSessionId: session.id,
+            paymentIntentId: order.paymentIntentId,
+            paymentStatus: 'succeeded',
+            paymentDate: new Date()
+          });
+          await payment.save();
+
+          if (userId) {
+            await Cart.findOneAndUpdate({ user: userId }, { items: [] });
+          }
+        }
+      } catch (error: any) {
+        console.error('Error executing background webhook processing:', error);
+      }
+    }
+  }
+
+  res.status(200).json({ received: true });
 });
 
 // Stripe checkout success verification
