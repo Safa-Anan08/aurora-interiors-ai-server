@@ -51,24 +51,33 @@ router.post('/', async (req: Request, res: Response) => {
 
     // If using real Replicate API
     if (!isMock && process.env.REPLICATE_API_TOKEN) {
-      // Real API integration would go here.
-      // We write the placeholder logic so that it can be enabled instantly.
-      /*
-      const Replicate = require('replicate');
-      const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN });
-      const output = await replicate.run(
-        "stability-ai/sdxl:39ed7e9d4c109033d9f50ade096472f18d368e7307fafe79b4a45a3550fe2cb4",
-        { input: { prompt: promptUsed } }
-      );
-      return res.status(200).json({
-        success: true,
-        imageUrl: output[0],
-        promptUsed,
-        style,
-        roomType,
-        createdAt: new Date().toISOString()
-      });
-      */
+      try {
+        const Replicate = require('replicate');
+        const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN });
+        
+        const output = await replicate.run(
+          "stability-ai/sdxl:39ed7e9d4c109033d9f50ade096472f18d368e7307fafe79b4a45a3550fe2cb4",
+          { input: { prompt: promptUsed } }
+        );
+
+        if (!output || output.length === 0) {
+          throw new Error('No image was generated from the AI provider.');
+        }
+
+        return res.status(200).json({
+          success: true,
+          imageUrl: output[0],
+          promptUsed,
+          style,
+          roomType,
+          createdAt: new Date().toISOString()
+        });
+      } catch (apiError: any) {
+        console.error('Replicate API Error:', apiError);
+        return res.status(500).json({
+          error: { message: 'AI generation failed: ' + (apiError.message || 'Unknown API error') }
+        });
+      }
     }
 
     // Mock API path: Simulate a delay (e.g. 2.5 seconds) to mimic AI processing
