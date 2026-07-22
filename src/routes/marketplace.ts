@@ -418,9 +418,11 @@ router.get('/products', async (req: Request, res: Response) => {
       id: p._id.toString(),
       name: p.name,
       category: p.category,
+      subCategory: p.subCategory,
       price: p.price,
       description: p.description,
       image: p.image,
+      color: p.color,
       specs: Object.fromEntries(p.specs || new Map()),
       rating: p.rating,
       reviewsCount: p.reviewsCount
